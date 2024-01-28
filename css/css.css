@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    color: #383e45;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.sitetitle{
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+
+.sitetitle a{
+    display: block;
+}
+
+.head{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.head nav ul{
+    display: flex;
+
+}
