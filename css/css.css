@@ -20,9 +20,8 @@ img{
 }
 
 .sitetitle{
-    width: 120px;
-    line-height: 1px;
-    padding: 10px 0;
+    width: 150px;
+
 }
 
 .sitetitle a{
@@ -32,12 +31,23 @@ img{
 .head{
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
 }
+
 .head nav ul{
     display: flex;
-    padding: 10px 0;
+    padding: 20px ;
+
 }
 .head li{
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+#mainvisual img{
+    max-width: 1920px;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    /* 拡大縮小してもアスペクト比が保たれる */
 }
