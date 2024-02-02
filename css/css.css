@@ -36,5 +36,8 @@ img{
 }
 .head nav ul{
     display: flex;
-
+    padding: 10px 0;
+}
+.head li{
+    margin-left: 10px;
 }
