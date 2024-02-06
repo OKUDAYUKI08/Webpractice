@@ -62,6 +62,7 @@ img{
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+
 }
 #about img{
     border-radius: 50%;
@@ -86,20 +87,33 @@ img{
 }
 #bycycle ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-#bycycle ul img{
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
+#bycycle li{
+    width: 32%;
 }
 
 #foot{
     text-align: center;
+    margin-top: 500px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     #mainvisual img{
         height: calc(100vh-60px);
+    }
+
+    #content{
+        flex-direction: column;
+    }
+    #content img{
+        margin-left: 100px;
+    }
+    #bycycle ul{
+        flex-direction: column;
+    }
+    #bycycle li{
+        width: 100%;
+        margin-bottom: 100px;
     }
 }
