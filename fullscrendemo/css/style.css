@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* 共通部分 */
+
+html{
+    font-size: 100%;
+    /* ユーザが指定したフォントサイズが正しく反映されるために書く */
+}
+body{
+    font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+    /* 文字をすべて大文字にしている */
+    text-transform: uppercase;
+    margin-top: 34px;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+
+.main-nav a{
+    color:#432;
+}
+.main-nav a:hover{
+    color: #0bd;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    /* 横幅の最大を設定 */
+    max-width: 1100px;
+    /* ブロックレベルの要素を中央揃えにする */
+    /* img等のインライン要素を中央揃えにする場合はjustfycontetで指定する */
+    margin: 0 auto;
+    padding: 0 4%;
+}
