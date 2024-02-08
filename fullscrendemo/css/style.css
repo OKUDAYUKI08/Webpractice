@@ -49,3 +49,48 @@ img{
     margin: 0 auto;
     padding: 0 4%;
 }
+
+.home-content{
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+.page-title{
+    font-size: 5rem;
+    font-family: 'Philosopher',serif;
+    text-transform: uppercase;
+    font-weight:normal;
+}
+
+.button{
+    font-size: 1.375rem;
+    background:#0bd;
+    color: #fff;
+    border-radius:5px;
+    padding:18px 32px
+
+}
+.button:hover{
+    background:#0090aa;
+}
+
+/* 画像を画面いっぱいに表示するため */
+.big-bg{
+    background-size:cover;
+    background-position: center top;
+}
+#home{
+    background-image:url(../images/main-bg.jpg);
+    /* 要素を画面の高さいっぱいに表示するとき */
+    min-height: 100vh;
+    /* background-color: #0bd;
+    background-blend-mode: screen; */
+}
+#home .page-title{
+    text-transform: none;
+}
+
