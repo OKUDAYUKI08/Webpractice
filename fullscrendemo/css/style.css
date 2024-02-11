@@ -114,3 +114,14 @@ footer p{
     font-size: 0.875rem;
 }
 
+article{
+    width: 73%;
+}
+aside{
+    width: 23%;
+}
+.news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
