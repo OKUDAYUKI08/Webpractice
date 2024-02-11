@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 共通部分開始 */
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+/* 共通部分終了 */
+
+/* header内開始 */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title{
+    margin: 10px;
+}
+nav ul{
+    display: flex;
+    margin: 10%;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+nav ul li a:hover{
+    color:darkgray;
+}
+/* header内終了 */
+
+/* main開始 */
+.mainvisual img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.content{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+#About p{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.content h2{
+    text-align: center;
+}
+/* main終了 */
