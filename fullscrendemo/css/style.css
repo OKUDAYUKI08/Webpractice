@@ -199,7 +199,54 @@ aside p{
 .sub-menu a:hover{
     color: #0bd;
 }
+/* メニュースタイルの開始 */
+#menu{
+    background-image: url(../images/menu-bg.jpg);
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title{
+    text-align: center;
+}
+.menu-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
 
+/* メニュースタイルの終了 */
+/* メニューのアイテムの開始 */
+.grid{
+    display: grid;
+    /* 余白を指定 */
+    gap: 26px;
+    /* 1:1:1の割合で1列に3つの要素を横に並べる */
+    /* grid-template-columns: 1fr,1fr,1fr; */
+    /* minmax(最小,最大) 240pxよりは小さくならずに画面の幅によって伸縮するようになる */
+    /* auto-fitで要素を折り返しながら親要素の余ったスペースが埋まっていく */
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.big-box{
+    /* 始まりのライン/終わりのライン */
+    /* 1 2 3 4
+       | | | |
+    1--□ □ □ □
+    2--□ □ □ □
+    3--□ □ □ □
+    4--□ □ □ □          */
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.big-box img{
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+/* メニューのアイテムの終了 */
 @media (max-width:600px){
     .page-title{
         font-size: 2.5rem;
@@ -252,7 +299,16 @@ aside p{
     .post-title,.post-cat{
         margin-left: 80px;
     }
-    /* メニュースタイルの開始 */
-    
-    /* メニュースタイルの終了 */
+    .menu-content{
+        margin-top: 20%;
+    }
+    .big-box{
+        /* 範囲の指定を解消する */
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .big-box img{
+        /* 範囲の指定を解消する */
+        height: auto;
+    }
 }
