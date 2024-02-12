@@ -247,6 +247,12 @@ aside p{
     object-fit: cover;
 }
 /* メニューのアイテムの終了 */
+/* contactのCSSの開始 */
+#contact{
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+/* contactのCSSの終了 */
 @media (max-width:600px){
     .page-title{
         font-size: 2.5rem;
